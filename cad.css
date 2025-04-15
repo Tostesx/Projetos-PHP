@@ -1,0 +1,165 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+  background-color: #f2f2f2;
+  font-family: 'Times New Roman', Times, serif;
+  color: #333333;
+  padding: 20px;
+}
+
+/* Conteúdo principal */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+main h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+main p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+/* Formulário com centralização e alinhamento */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Cada linha do formulário */
+form p {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Labels alinhados à direita */
+form label {
+  width: 100px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+/* Inputs ocupando o restante do espaço */
+form input[type="text"],
+form input[type="number"] {
+  flex: 1;
+  padding: 5px 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Botão salvar centralizado */
+form input[type="submit"] {
+  padding: 10px 20px;
+  font-family: 'Times New Roman', Times, serif;
+  border: none;
+  background-color: #4f5b93;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+  background-color: #475284;
+}
+/* Botão salvar alinhado à direita */
+form .botao-salvar {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+form input[type="submit"] {
+  padding: 10px 20px;
+  font-family: 'Times New Roman', Times, serif;
+  border: none;
+  background-color: #4f5b93;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+  background-color: #475284;
+}
+/* Estilo para tabelas */
+table {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 1.1rem;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #4f5b93;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #e6e6e6;
+}
+/* Adicione estas regras no final do seu cad.css */
+
+/* Ajustes para tabelas dentro de iframes */
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Para a tabela de listagem quando estiver no iframe */
+.iframe-table-container {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.iframe-table-container table {
+  width: 100%;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Ajuste para o cabeçalho fixo */
+.iframe-table-container thead th {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}

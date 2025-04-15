@@ -1,0 +1,122 @@
+/* Reset básico */
+@font-face {
+  font-family: 'Handel-Gothic-BT';
+  src: url('Handel-Gothic-BT.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo com fundo quadriculado */
+body {
+  background-color: #333333;
+  background-image: linear-gradient(45deg, #2f2f2f 1px, transparent 1px), 
+                    linear-gradient(-45deg, #2f2f2f 1px, transparent 1px);
+  background-size: 10px 10px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #cfcfcf;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Header estilizado */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: #4f5b93;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+header img {
+  width: 80px;
+  height: auto;
+}
+
+header h1 {
+  font-family: 'Handel-Gothic-BT', sans-serif;
+  font-size: 2.5rem;
+  color: #08090d;
+  text-shadow: 
+    -1px -1px 0 #aaa,  
+     1px -1px 0 #aaa,
+    -1px  1px 0 #aaa,
+     1px  1px 0 #aaa;
+}
+
+/* Main com conteúdo centralizado */
+main {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  color: #333;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+/* Inputs e labels */
+form label {
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Botão */
+form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4f5b93;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-family: 'Times New Roman', Times, serif;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #3e4775;
+}
+
+/* Mensagens PHP */
+main p, main div {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 1rem;
+  color: red;
+}
+
+footer {
+   color: #cfcfcf;
+}
+
+footer p {
+  transition: color 0.3s;
+}
+
+footer p:hover {
+  color: #cf82b1;
+}

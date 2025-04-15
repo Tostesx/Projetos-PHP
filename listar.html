@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Listar Mamutes</title>
+  <link rel="stylesheet" href="cad.css"/>
+  <style>
+    /* Sobrescreve alguns estilos apenas para esta página */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    
+    body {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+    
+    h2 {
+      padding: 15px;
+      text-align: center;
+      margin: 0;
+      background-color: #4f5b93;
+      color: white;
+      font-size: 1.5rem;
+    }
+    
+    iframe {
+      flex: 1;
+      width: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <h2>Listagem de Mamutes</h2>
+  <iframe src="listar.php" style="width: 100%; height: 100%; border: none;"></iframe>
+</body>
+</html>

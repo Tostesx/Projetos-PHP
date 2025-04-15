@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Excluir Mamute</title>
+  <link rel="stylesheet" href="cad.css"/>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    h2 {
+      padding: 15px;
+      text-align: center;
+      margin: 0;
+      background-color: #4f5b93;
+      color: white;
+      font-size: 1.5rem;
+    }
+    .form-container {
+      padding: 20px;
+      background-color: #f0f0f0;
+      text-align: center;
+    }
+    #result-frame {
+      flex: 1;
+      width: 100%;
+      border: none;
+    }
+    input[type="text"], 
+    input[type="number"],
+    button {
+      padding: 10px;
+      font-size: 1rem;
+      margin: 0 5px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #4f5b93;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #3a4579;
+    }
+  </style>
+</head>
+<body>
+  <h2>Excluir Mamute</h2>
+
+  <div class="form-container">
+    <form action="excluir.php" method="POST" target="result-frame">
+        <div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+            <label for="id" style="margin-right: 5px;">Digite:</label>
+            <input type="number" name="id" placeholder="ID" id="id">
+            <span style="margin: 0 10px;">Ou</span>
+            <input type="text" name="nome" placeholder="Nome">
+            <button type="submit" name="consultar">Buscar</button>
+        </div>
+</form>
+  </div>
+
+  <iframe id="result-frame" name="result-frame" srcdoc="<html><head><style>body{padding:20px;}</style></head><body><p style='text-align:center;color:#666;'>Os resultados aparecerão aqui</p></body></html>"></iframe>
+</body>
+</html>
